@@ -188,3 +188,50 @@ console.log(typeof number); // Outputs: "number"
 var text = "Hello";
 console.log(typeof text); // Outputs: "string"
 ```
+Certainly! Here’s the note on Strict Mode in README markdown syntax:
+
+```markdown
+# JavaScript Strict Mode
+
+## Purpose
+Enforces cleaner, safer code by catching common mistakes.
+
+## How to Enable
+Add `"use strict";` at the beginning of your script or function.
+
+```javascript
+"use strict";
+// Your code here
+```
+Certainly! Here’s a corrected version of your notes formatted in Markdown for a README:
+
+```markdown
+
+## Dynamic Typing
+
+JavaScript is a dynamically typed language. This means that variables in JavaScript can hold values of any type, and their types can change during runtime. Because of this, you don't need to specify a type when declaring a variable.
+
+```javascript
+let example = 42;   // Initially a number
+example = "Hello";  // Now it's a string
+```
+
+## Hoisting
+
+Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use variables and functions before they are declared in the code. 
+
+Here's a simplified way to think about it:
+
+1. **First Pass**: JavaScript scans the code and identifies all the declarations (e.g., `var`, `function`).
+2. **Second Pass**: JavaScript executes the code, using the declarations that were identified in the first pass.
+
+For example:
+
+```javascript
+console.log(x);  // undefined, not an error
+var x = 5;
+console.log(x);  // 5
+```
+
+In this case, `var x` is hoisted to the top, but the assignment `x = 5` is not.
+```
