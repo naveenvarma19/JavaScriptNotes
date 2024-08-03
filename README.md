@@ -276,3 +276,120 @@ To use the function, call it with arguments and store the result in a variable:
 var sum = addition(10, 10);
 console.log(sum);  // This will print '20' to the console
 ```
+
+---
+## JavaScript Control Structures
+
+# `if`, `else if`, and `else` Statements
+
+Control structures are fundamental in programming as they allow you to control the flow of execution based on conditions.
+
+### `if` Statement
+
+The `if` statement evaluates a condition. If the condition evaluates to `true`, the block of code inside the `if` statement is executed.
+
+```javascript
+if (condition) {
+    console.log('It will execute only if the condition is true');
+}
+```
+
+### `else if` Statement
+
+The `else if` statement allows you to check multiple conditions. If the first condition is `false`, the `else if` statement can test another condition.
+
+```javascript
+if (condition) {
+    console.log('It will execute only if the condition is true');
+} else if (condition2) {
+    console.log('It will execute only if condition2 is true');
+}
+```
+
+### `else` Statement
+
+The `else` statement is executed if none of the preceding conditions are `true`. It serves as a default case.
+
+```javascript
+if (condition) {
+    console.log('It will execute only if the condition is true');
+} else if (condition2) {
+    console.log('It will execute only if condition2 is true');
+} else {
+    console.log('It will execute only if all preceding conditions are false');
+}
+```
+
+### Example
+
+Here's an example that combines `if`, `else if`, and `else` statements:
+
+```javascript
+var score = 85;
+
+if (score >= 90) {
+    console.log('Grade: A');
+} else if (score >= 80) {
+    console.log('Grade: B');
+} else if (score >= 70) {
+    console.log('Grade: C');
+} else if (score >= 60) {
+    console.log('Grade: D');
+} else {
+    console.log('Grade: F');
+}
+```
+
+
+## `switch` Statement
+
+The `switch` statement is another control structure in JavaScript that allows you to execute different blocks of code based on the value of an expression. It is often used as an alternative to multiple `if...else if...else` statements when comparing a single variable to multiple values.
+
+### Syntax
+
+```javascript
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    // Add more cases as needed
+    default:
+        // Code to execute if none of the cases match
+}
+```
+
+### How It Works
+
+- **`expression`**: The value you want to compare.
+- **`case value1`**: A possible value of the expression. If the expression matches `value1`, the code block under this case is executed.
+- **`break`**: Ends the case. If omitted, the next case will be executed even if it doesn't match.
+- **`default`**: Executes if none of the cases match the expression. This part is optional.
+
+### Example
+
+Here's an example using the `switch` statement to determine the day of the week:
+
+```javascript
+var day = 3;
+var dayName;
+
+switch (day) {
+    case 1:
+        dayName = 'Monday';
+        break;
+    case 2:
+        dayName = 'Tuesday';
+        break;
+    case 3:
+        dayName = 'Wednesday';
+        break;
+    default:
+        dayName = 'Invalid day';
+}
+
+console.log(dayName);  // This will print 'Wednesday'
+```
+
