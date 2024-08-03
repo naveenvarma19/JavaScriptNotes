@@ -2,6 +2,7 @@
 
 Welcome to my JavaScript Learning Repository! This repository is designed to help me keep track of my learning progress and notes on various JavaScript topics from the Udemy course by Maximilian Schwarzmüller. 
 
+---
 
 # JavaScript Notes
 
@@ -18,7 +19,9 @@ JavaScript is super important for creating modern websites because:
 - **Asynchronous Operations:** It lets you handle tasks like fetching data from servers without freezing up the webpage, making your site feel smoother.
 - **DOM Manipulation:** It can change the content and layout of a page on the fly, which is key for making dynamic, single-page applications.
 
-```markdown
+---
+
+## Linking JavaScript with HTML
 
 JavaScript can be connected to HTML in two ways: internal and external.
 
@@ -45,9 +48,9 @@ Example:
 - The `<script>` tag must always have both opening and closing tags when referencing an external JS file, even if no code is placed between them.
 
 - You can link as many external JavaScript files as needed in your HTML file.
-```
+ ---
 
-# JavaScript `<script>` Tag Placement and `defer` Attribute
+## JavaScript `<script>` Tag Placement and `defer` Attribute
 
 ## `<script>` Tag Placement
 
@@ -97,11 +100,10 @@ The `<noscript>` HTML tag is used to define content that should be displayed to 
   <p>It looks like JavaScript is disabled in your browser. Please enable JavaScript to enjoy the full functionality of this website.</p>
 </noscript>
 ```
-
+---
 
 # JavaScript Variables
 
-## Introduction
 
 In JavaScript, variables are used to store values that can be used and manipulated throughout your code.
 
@@ -125,6 +127,7 @@ var variableName = value;
 var message = "Hello, world!";
 console.log(message); // Outputs: Hello, world!
 ```
+---
 
 ## Data Types
 
@@ -188,9 +191,10 @@ console.log(typeof number); // Outputs: "number"
 var text = "Hello";
 console.log(typeof text); // Outputs: "string"
 ```
-Certainly! Here’s the note on Strict Mode in README markdown syntax:
 
-```markdown
+---
+## Strict Mode
+
 # JavaScript Strict Mode
 
 ## Purpose
@@ -205,8 +209,7 @@ Add `"use strict";` at the beginning of your script or function.
 ```
 Certainly! Here’s a corrected version of your notes formatted in Markdown for a README:
 
-```markdown
-
+---
 ## Dynamic Typing
 
 JavaScript is a dynamically typed language. This means that variables in JavaScript can hold values of any type, and their types can change during runtime. Because of this, you don't need to specify a type when declaring a variable.
@@ -215,7 +218,7 @@ JavaScript is a dynamically typed language. This means that variables in JavaScr
 let example = 42;   // Initially a number
 example = "Hello";  // Now it's a string
 ```
-
+---
 ## Hoisting
 
 Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use variables and functions before they are declared in the code. 
@@ -234,4 +237,42 @@ console.log(x);  // 5
 ```
 
 In this case, `var x` is hoisted to the top, but the assignment `x = 5` is not.
+---
+
+## JavaScript Functions
+## Declaring Functions
+
+To declare a function in JavaScript, use the following syntax:
+
+```javascript
+function funName() {
+    console.log('Inside Function');
+}
+```
+
+However, just declaring a function does not execute it. To see the output, you need to **call** the function:
+
+```javascript
+funName();  // This will print 'Inside Function' to the console
+```
+
+## Functions with Arguments and Return Statement
+
+Functions can accept arguments and return values. The `return` statement will send the output back to the place where the function was called.
+
+### Example: Adding Two Numbers
+
+Here's how you can declare a function that takes parameters and returns a value:
+
+```javascript
+function addition(num1, num2) {
+    return num1 + num2;
+}
+```
+
+To use the function, call it with arguments and store the result in a variable:
+
+```javascript
+var sum = addition(10, 10);
+console.log(sum);  // This will print '20' to the console
 ```
